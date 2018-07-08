@@ -11,6 +11,8 @@ spring:
       password: admin
 
 eureka:
+  server:
+    enableSelfPreservation: false
   client:
     registerWithEureka: false
     fetchRegistry: false
