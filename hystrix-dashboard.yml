@@ -1,0 +1,13 @@
+server:
+  port: 9002
+
+eureka:
+  client:
+    healthcheck:
+      enable: true
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
