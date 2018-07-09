@@ -11,3 +11,7 @@ spring:
     user:
       name: admin
       password: admin
+
+turbine:
+  appConfig: eureka-client,service-one
+  clusterNameExpression: "'default'"
