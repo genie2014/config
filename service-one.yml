@@ -5,3 +5,9 @@ eureka:
   client:
     healthcheck:
       enable: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
