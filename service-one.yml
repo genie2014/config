@@ -14,6 +14,22 @@ feign:
   hystrix:
     enabled: true
 
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 40000
+
+ribbon:
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  OkToRetryOnAllOperations: false
+  ServerListRefreshInterval: 30000
+  ConnectTimeout: 3000
+  ReadTimeout: 7000
+
 management:
   endpoints:
     web:
